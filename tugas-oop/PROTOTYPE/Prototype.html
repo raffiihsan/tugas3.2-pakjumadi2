@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype Inheritance</title>
+</head>
+<body>
+    <script>
+
+        function Person(firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.sayHello = function (name) {
+                console.info(`Hello ${name}, my nama adalah ${this.firstName}`)
+            }
+        }
+
+        Person.prototype.sayBye = function (){
+            console.info("Goodbye World!");
+        }
+
+        Person.prototype.run = function (){
+            console.info(`${this.firstName} is Running🏃`);
+        }
+
+        const Laura = new Person("Laura", "Laura");
+        Laura.sayBye = function () {
+            console.info("Goodbye World!")
+        }
+        const mas = new Person("mas", "Santoso");
+
+        console.log(Laura);
+        console.log(mas);
+
+        Laura.sayBye();
+        Laura.run();
+
+    </script>
+</body>
+</html>
