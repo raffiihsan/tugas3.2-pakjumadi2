@@ -29,9 +29,10 @@
 <body>
    <h1> Buat Account Baru</h1>
    <h2>Sign up form</h2>
-   <label for="first">First name :</label>
+   <form action="welcome.php" method="get">
+   <label for="Name">First name :</label>
    <br></br>
-   <input type="text" id="first" name="first">
+   <input type="text" id="Name" name="Name">
    <br></br>
    <label for="last">Last name :</label>
    <br></br>
@@ -41,13 +42,13 @@
    <label for="Gender">Gender</label>
    <br></br>
 
-       <input type="radio" name="pilihan" value="opsi1" id="opsi1">
+       <input type="radio" name="Gender" value="male" id="male">
        <label for="male">male</label>
        <br>
-       <input type="radio" name="pilihan" value="opsi2" id="opsi2">
+       <input type="radio" name="Gender" value="Female" id="Female">
        <label for="Female">Female</label>
        <br>
-       <input type="radio" name="pilihan" value="opsi3" id="opsi3">
+       <input type="radio" name="Gender" value="Bugatti" id="Bugatti">
        <label for="Bugatti">Bugatti</label>
        <br></br>
 
@@ -65,12 +66,12 @@
 
        <label for="language">language</label>
        <br></br>
-       <input type="checkbox">Nihonggo<br>
-       <input type="checkbox">Rusia<br>
-       <input type="checkbox">javanese<br>
-       <input type="checkbox">France<br>
-       <input type="checkbox">Nepali<br>
-       <input type="checkbox">Korean<br>
+       <input type="checkbox" Name="language">Nihonggo<br>
+       <input type="checkbox" Name="language">Rusia<br>
+       <input type="checkbox" Name="language">javanese<br>
+       <input type="checkbox" Name="language">France<br>
+       <input type="checkbox" Name="language">Nepali<br>
+       <input type="checkbox" Name="language">Korean<br>
        <br></br>
 
        <label for="Bio">Bio</label>
@@ -78,8 +79,9 @@
        <textarea name="Bio" id="Bio" cols="30" rows="10"></textarea>
        <br>
        
-       <a href="welcome.html">
+       <a href="welcome.php">
            <button>sign up</button>
        </a>
+       </form>
     </body>
 </html>

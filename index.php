@@ -20,8 +20,7 @@
     <h3>Cara Bergabung ke Media Online</h3>
     <ol>
         <p>Megunjungi Website ini</p>
-        <p>mendaftarkan di form sign up <a href="signup-form.html">Form sign up</a></p>
-        <p>Selesai</p>
+        <p>mendaftarkan di form sign up <a href="signup-form.php">Form sign up</a></p>
     </ol>
 </body>
 </html>
